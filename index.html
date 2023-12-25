@@ -149,6 +149,11 @@
     float: right;
     height: 344px !important;
 }
+a {
+text-decoration: none;
+    color: #252121;
+    font-family: system-ui;
+}
  @media only screen and (max-width: 768px) {
             .wholepage {
                 flex-direction: column;
@@ -197,10 +202,10 @@
             <div id="ukDateTime"></div>
             <!-- Your content goes here -->
             <br>
-           <a>SportStreamingEver.com</a>
-            
-            <br>
-                <a>Click here for more -</a>
+           <h4>
+           <a href="https://sportstreamingever.com/">SportStreamingEver.com</a></h4>
+
+                <a href="#">Click here for more -</a>
             <div class="left_ads">
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4700838914631446"
         crossorigin="anonymous"></script>
@@ -292,7 +297,7 @@
             const options = { timeZone: ukTimeZone, hour12: true, weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric' };
             const ukDateTime = new Date().toLocaleString('en-GB', options);
             const modifiedHh = ukDateTime.replace(" at ", " ");
-            ukDateTimeElement.textContent = `${modifiedHh}`;
+            ukDateTimeElement.textContent = `${modifiedHh}` +" EST";
         }
         // Initial call to set the time
         updateUKDateTime();
