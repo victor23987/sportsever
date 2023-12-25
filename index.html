@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Sports</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .wholepage {
+
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row; /* Horizontal layout */
+        }
+
+        .left_container {
+            background-color: white;
+            flex: 0 0 12%; /* Adjust the width as needed */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .center_container {
+            display: flex;
+            flex-direction: column; /* Vertical layout */
+            flex: 1; /* Takes up remaining width */
+        }
+
+        .top_container {
+            padding: 10px;
+            flex: 1; /* Each takes up half of the height */
+            /* overflow: hidden;  Ensures the image doesn't overflow the container */
+            display: flex; /* Make it a flex container */
+            align-items: flex-start; /* Align items to the start (top) of the container */
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            width: 100%;
+            height: -webkit-fill-available;
+        }
+
+        .top_container_image1 {
+
+            padding: 8px;
+            overflow: hidden; /* Ensure the border-radius doesn't get clipped */
+            width: 65%;
+            height: -webkit-fill-available;
+        }
+
+        .top_container_image1 img {
+            width: 100%;
+            height: 100%;
+            border-radius: 2.5%; /* Makes the image circular */
+            object-fit: cover; /* Ensures the image covers the container */
+            display: block; /* Removes any extra spacing around the image */
+        }
+
+        .top_container_image1_quotes {
+            flex: 1; /* Take up remaining space */
+            padding: 8px;
+            width: 60%;
+             overflow-wrap: break-word;
+        }
+
+        .top_container_image1_ads {
+            width: 30%;
+        }
+
+        .bottom_container {
+            display: flex;
+            /* Horizontal layout for the bottom container */
+            flex-direction: row;
+            flex: 1; /* Each takes up half of the height */
+        }
+
+        .bottom_subcontainer {
+            flex: 1; /* Each takes up one-fifth of the width */
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+
+        /* Different background colors for the five subcontainers */
+        /*   .subcontainer1 { background-color: lightgreen; }
+        .subcontainer2 { background-color: lightcoral; }
+        .subcontainer3 { background-color: lightpink; }
+        .subcontainer4 { background-color: lightsalmon; }
+        .subcontainer5 { background-color: lightseagreen; } */
+
+        /* Style for displaying the time */
+        #usTime {
+            font-size: 18px;
+            color: #333;
+        }
+
+       .top_container_image1_quotes li {
+            font-size: 15px;
+            font-family: monospace;
+            padding: 3px;
+        }
+        li {
+            font-size: 15px;
+            margin-bottom: 5px;
+            font-family: monospace;
+            padding: 9px;
+        }
+        .bottom_subcontainer_image1 {
+            height: 50%; /* Set the height to 50% */
+            overflow: hidden; /* Ensure the image doesn't overflow the container */
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+    .bottom_subcontainer_image1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensures the image covers the container */
+        display: block; /* Removes any extra spacing around the image */
+        padding: 7px;
+    }
+    .left_container {
+    font-family: cursive;
+    font-size: inherit;
+}
+.top_container_image1:hover img,
+.bottom_subcontainer_image1:hover img {
+    transform: scale(1.1); /* Adjust the scaling factor as needed */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+.con-ads {
+    display: flex;
+    width: 100%;
+}
+ @media only screen and (max-width: 768px) {
+            .wholepage {
+                flex-direction: column;
+            }
+
+            .left_container,
+            .center_container {
+                width: 100%;
+                padding: 10px;
+            }
+
+            .top_container_image1 {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .top_container_image1_quotes,
+            .top_container_image1_ads {
+                width: 50%;
+                box-sizing: border-box;
+                padding: 10px;
+            }
+
+            .bottom_container {
+                flex-direction: column;
+            }
+            .top_container{
+            display: block;
+            }
+
+            .bottom_subcontainer {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .bottom_subcontainer_image1 img {
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wholepage">
+        <div class="left_container">
+            <div id="ukDateTime"></div>
+            <!-- Your content goes here -->
+            <br>
+           <a>SportStreamingEver.com</a>
+            <a>"Your Front Row Seat to the Heartbeat of the Game!"</a>
+            <br>
+                <a>Click here for more -</a>
+        </div>
+
+        <div class="center_container">
+            <div class="top_container">
+                <!-- Top container content goes here -->
+                <div class="top_container_image1"><img src="image1.jpg" alt="Italian Trulli"></div>
+                <div class="con-ads">
+                <div class="top_container_image1_quotes">
+                    <p>
+                    <h2> Sir Jim Ratcliffe has acquired 25% of Manchester United - </h2>
+                        <li>Sir Jim Ratcliffe has acquired 25% of Manchester United for £1.2bn, giving him control of football operations and a say in the commercial side managed by the Glazer family.</li>
+                        <li>Sky Sports News chief reporter Kaveh Solhekol explains what this deal means for the future of the club and its involvement in the Glazers'.</li>
+                        <li>The deal has not been fully rubber-stamped yet, but Ratcliffe is buying 25 per cent of the Class B shares owned by the family and also offering Class A shares for $33 per share on the New York Stock Exchange.</li>
+                    </p>
+                </div>
+                <div class="top_container_image1_ads"></div>
+            </div>
+                </div>
+            <div class="bottom_container">
+                <div class="bottom_subcontainer subcontainer1">
+                    <!-- Bottom subcontainer 1 content goes here -->
+                    <div class="bottom_subcontainer_image1"><img src="image2.jpg" alt="Italian Trulli"></div>
+                    <li>Erling Haaland achieved record-breaking goal tallies and won big trophies in 2023
+                    Manchester City striker scored 44 goals in the year, the most for a club in Europe's
+                        top five leagues</li>
+                </div>
+                <div class="bottom_subcontainer subcontainer2">
+                    <!-- Bottom subcontainer 2 content goes here -->
+                     <div class="bottom_subcontainer_image1"><img src="image3.jpg" alt="Italian Trulli"></div>
+                    <li> Naoya Inoue is expected to become a two-weight undisputed champion against Marlon Tapales on Boxing Day.</li>
+                    <li> His victory could make him the best fighter in the world.</li>
+                </div>
+                <div class="bottom_subcontainer subcontainer3">
+                    <!-- Bottom subcontainer 3 content goes here -->
+                     <div class="bottom_subcontainer_image1"><img src="image4.jpg" alt="Italian Trulli"></div>
+                     <li>  Chelsea has lost four consecutive away Premier League games for the first time since December
+                         2000 under Claudio Ranieri.</li>
+
+                </div>
+                <div class="bottom_subcontainer subcontainer4">
+                    <!-- Bottom subcontainer 4 content goes here -->
+                     <div class="bottom_subcontainer_image1"><img src="image5.jpg" alt="Italian Trulli"></div>
+                    <li>Live tennis is available on Sky Sports in 2024 with big names such as Rafael Nadal, Naomi Osaka, Andy Murray, and Emma Raducanu.
+                     The new season promises to feature exciting rivalries and drama, with the WTA tour leading the field.</li>
+                </div>
+                <div class="bottom_subcontainer subcontainer5">
+                    <!-- Bottom subcontainer 5 content goes here -->
+                     <div class="bottom_subcontainer_image1"><img src="image6.jpg" alt="Italian Trulli"></div>
+                    <li>Miami Dolphins defeated Dallas Cowboys in a thriller
+                                Detroit Lions clinch NFC North division title</li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+          function updateUKDateTime() {
+            const ukDateTimeElement = document.getElementById('ukDateTime');
+            const ukTimeZone = 'America/New_York'; // Adjust the timezone as needed
+            const options = { timeZone: ukTimeZone, hour12: true, weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric' };
+            const ukDateTime = new Date().toLocaleString('en-GB', options);
+            const modifiedHh = ukDateTime.replace(" at ", " ");
+            ukDateTimeElement.textContent = `${modifiedHh}`;
+        }
+        // Initial call to set the time
+        updateUKDateTime();
+
+        // Update the time every second
+        setInterval(updateUKDateTime, 1000);
+
+    </script>
+</body>
+</html>
